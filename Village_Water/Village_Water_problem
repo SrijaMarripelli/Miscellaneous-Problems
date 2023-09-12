@@ -1,0 +1,45 @@
+During the summer season, the government needs to distribute water to N villages.
+Since each village has a different population, the water requirement is also different.
+There is only one water tanker available for this task and it can make a maximum of Mtrips from the water source to the villages.
+(The tanker can visit the same village multiple times)
+
+Any extra water left in the tab=nker is spilled over. 
+The tanker should be designed such that the capacity of the tanker is the minimum possible in order to send water to the villages within the M trips.
+Your task is to find the 'spillage that happens' if we use a tanker with the 'minimum possible capacity' that can deliver the required amount of water to each village within the given number of trips.
+
+Input Format:
+Each input contains the following:
+
+N - First-line contains a number of villages (0<N<=10^7)
+Next line contains array A of size N, where each A[i] represents the wtaer need of each village. (0<=A[i]<=10^5)
+M - Next-line has a single integer representing the maximum number of trips a tanker has to do (0<=M<=10^6)
+
+Output Format:
+
+- A single integer representing the total amount of spillage that happened 
+- If water cannot be delivered by following all conditions then print -1
+
+Sample Test Cases:
+
+Input:
+5
+4 3 5 2 1
+7
+
+Output:
+6
+
+Explanantion:
+
+We will use a tanker with capacity 3, as it is the tanker with minimum capacity which can fulfill therequirement. Then the total spillage is 2 (1st village, in second trip) + 0(2nd village) + 1(3rd village, in second trip) + 1(4th village) + 2(5th village) = 6
+
+Input:
+5
+4 3 5 2 1
+4
+
+Output:
+-1
+
+Explanation:
+By no way in 4 trips water can be given to all villages.
